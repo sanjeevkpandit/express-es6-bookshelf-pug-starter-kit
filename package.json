@@ -14,6 +14,10 @@
   },
   "author": "Sanjeev Kumar Pandit",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanjeevkpandit/express-es6-bookshelf-pug-starter-kit.git"
+  },
   "dependencies": {
     "body-parser": "^1.15.2",
     "bookshelf": "^0.10.0",
