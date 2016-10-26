@@ -1,15 +1,14 @@
 import express from 'express';
 
-export default () => {
-    let routes = express.Router();
+let routes = express.Router();
 
-    let requestTime = (req, res, next) => {
-        let d = new Date();
-        req.requestTime = d.toDateString() + ' ' + d.toTimeString();
-        next();
-    };
+let requestTime = (req, res, next) => {
+    let d = new Date();
+    req.requestTime = d.toDateString() + ' ' + d.toTimeString();
+    next();
+};
 
-    routes.use(requestTime);
+routes.use(requestTime);
 
-    return routes;
-}
+export default routes;
+
